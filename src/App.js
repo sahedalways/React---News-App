@@ -6,16 +6,16 @@ import Footer from "./Components/Common/Footer/Footer";
 import Culture from "./Components/Culture/Culture";
 import SinglePage from "./Components/Screens/SinglePage/SinglePage";
 
-
 const App = () => {
   return (
     <>
       <Router>
         <Header />
         <Routes>
-          <Route path="/" exact element={<HomePage />} />
-          <Route path="/culture" exact element={<Culture />} />
-          <Route path="/singlepage/:id" exact element={<SinglePage />} />
+          <Route exact path="/" element={<HomePage />} />
+          <Route exact path="/culture" element={<Culture />} />
+          <Route exact path="/singlepage/:id" element={<SinglePage />} />
+          <Route exact path="*" element={<HomePage />} />
         </Routes>
         <Footer />
       </Router>
