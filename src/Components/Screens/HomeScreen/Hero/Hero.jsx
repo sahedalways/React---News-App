@@ -4,7 +4,7 @@ import Card from "./Card";
 import "./Hero.css";
 
 const Hero = () => {
-  const [items, setIems] = useState(hero);
+  const [items, setItems] = useState(hero);
   return (
     <>
       <section className="hero">
