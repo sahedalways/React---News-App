@@ -15,6 +15,7 @@ const App = () => {
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/culture" element={<Culture />} />
           <Route exact path="/singlepage/:id" element={<SinglePage />} />
+          <Route exact path="*" element={<HomePage />} />
         </Routes>
         <Footer />
       </Router>
